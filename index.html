@@ -1,261 +1,335 @@
-
-
-
-<!-- Dont alter any tags, fill in you information on required field only and dont alter style.css and javascript file-->
-<!-- once editing the templete, Create a github repo and push the code-->
-<!-- you can host the website on gitpages or netlify  -->
-<!---->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Mohit S</title>    <!-- Change it your name  --> .
-  </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="" class="link"  
-          >{MS}. <!--insert your initials here --></a
-        >
-      </h3> <!--use the linkedIn or any link in above href-->
-
-      <nav class="nav center">
-        <ul class="nav__list center">
-<!--           <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li> -->
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#Internship">Internship</a>
-          </li>
-          <!--   <li class="nav__list-item">
-            <a class="link link--nav" href="#Exp">Experience</a>
-          </li>-->
-        </ul>
-
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </header>
-
-    <main>
-      <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">Mohit.</span></h1>
-        <h2 class="about__role">Pre-Final year Student</h2>
-        <p class="about__desc"> <!-- Edit the About make sure you add your degree!-->
-          As a pre-final year student pursuing a B.E. in Computer Science and Engineering at MIT, Anna University, I'm passionate about exploring and advancing new technologies, particularly in software development. I enjoy experimenting with emerging technologies and staying informed about industry trends. Eager to explore new opportunities and contribute meaningfully to the evolving tech landscape. Let's connect for potential collaborations.
-        </p> <!-- about you -->
-        <br>
-        <a href="mailto:ashiksanyo01@gmail.com">Mail: smohit28.04@gmail.com </a><p> Contact: +91 98102 31172</p>  <!--Change it to your mail id and contact no-->
-      </br>
-      
-
-        <div class="about__contact center">
-          <a href="https://drive.google.com/file/d/1XLCRTyn2mIrMQl7SA4gMIN8UIHfACBx8/view?usp=drivesdk" target="_blank"  > <!-- drive link for resume-->
-            <span class="btn btn--outline">Resume</span> 
-          </a>
-
-          <a
-            href="https://github.com/M0HlT" target="_blank"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a> <!-- Github profile Link-->
-
-          <a
-            href="www.linkedin.com/in/mohitttts" target="_blank"  
-            aria-label="linkedin"
-            class="link link--icon"
-          > 
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a> <!-- LinledIn profile Link-->
-        </div>
-      </div>
-      
-      <!-- Projects -->
-<!--       <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
-
-        <div class="projects__grid">
-          <div class="project">
-            <h3>Ukraine Russia War Data Analysis</h3> 
-            <p class="project__description">
-              2022 Ukraine Russia War Exploratory Data Analysis, Analysis was done on the day 167 of the war
-            </p> 
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">Excel</li>
-              <li class="project__stack-item">Plotly</li>
-            </ul>
-
-            <a
-              href="https://github.com/ashiksanyo10/Russia-Ukraine_War_EDA" target="_blank"
-              aria-label="source code"
-              class="link link--icon"
-            > 
-
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            > 
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Drone Detection - YOLO v8</h3>
-            <p class="project__description">
-              An image Classification model using YOLO, which is trained on custom dataset
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">YOLO v8</li>
-            </ul>
-
-            <a
-              href="https://github.com/ashiksanyo10/DroneXYOLOv8" target="_blank"
-              aria-label="https://github.com/ashiksanyo10/DroneXYOLOv8" target="_blank"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>PowerBI Dashboards</h3>
-            <p class="project__description">
-              Developed a Business Intelligence portfolio with real-case reports showcasing data analysis expertise.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">PowerBI</li>
-              <li class="project__stack-item">SQL</li>
-              <li class="project__stack-item">Excel</li>
-            </ul>
-
-            <a
-              href="https://www.novypro.com/profile_projects/ashiksanyo" target="_blank"
-              aria-label="https://www.novypro.com/project/us-sales-dash" target="_blank"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
-      </section>
- -->
-      <section id="Internship" class="section Internship" id="Internship">
-        <h2 class="section__title">Internships & Certifications</h2>
-
-      <div class="project">
-        <h3>Eigengray</h3>
-        <p class="project__description">
-          led the development of software to control multiple GoPros at once and experimented with AI algorithms related to computer vision to create 3D environment.
-        </p>
-        <ul class="project__stack">
-          <li class="project__stack-item">Python</li>
-          <li class="project__stack-item">GaussianSplatting</li>
-          <li class="project__stack-item">OpenGoPro</li>
-          <li class="project__stack-item">API-Integration</li>
-        </ul>
-
-<!--         <a
-          href=""  
-          aria-label="https://www.novypro.com/project/us-sales-dash" target="_blank"
-          class="link link--icon"
-        > 
-          <i aria-hidden="true" class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://example.com"
-          aria-label="live preview"
-          class="link link--icon"
-        > -->
-          <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
- <!-- duplicate the above section and you can change it to paper or experience-->
-
-      
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">HTML</li>                        <!--You can fill in the elective course and you can remove extras-->
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">Java</li>
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">DataStructures</li>
-          <li class="skills__list-item btn btn--plain">API integration</li>
-        </ul>
-      </section>
-
-    <footer class="footer">
-      <a
-        href="" 
-        class="link footer__link"
-      >  
-        Created By Mohit! <!-- edit it to your name -->
-      </a>
-    </footer>
-
-    <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
-    </div>
-
-    <script src="./script.js"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohit S - Portfolio</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ 
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(135deg, #f5f0e8 0%, #e8e0d5 100%);
+color: #2d2419;
+line-height: 1.6;
+}
+ 
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+ 
+header {
+text-align: center;
+padding: 40px 0 20px;
+}
+ 
+nav {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+margin-bottom: 40px;
+}
+ 
+nav a {
+color: #8b7355;
+text-decoration: none;
+font-weight: 600;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+border: 2px solid transparent;
+}
+ 
+nav a:hover {
+background: #2d2419;
+color: white;
+border-color: #2d2419;
+}
+ 
+.hero {
+text-align: center;
+padding: 40px 0;
+}
+ 
+.profile-container {
+position: relative;
+width: 280px;
+height: 280px;
+margin: 0 auto 30px;
+animation: float 3s ease-in-out infinite;
+}
+ 
+.profile-image {
+width: 280px;
+height: 280px;
+border-radius: 50%;
+border: 6px solid #1a1a1a;
+background: #1a1a1a;
+object-fit: cover;
+box-shadow: 0 10px 40px rgba(139, 115, 85, 0.4);
+}
+ 
+.hero h1 {
+font-size: 3.5rem;
+color: #5d4a3a;
+margin-bottom: 15px;
+font-weight: 700;
+}
+ 
+.hero .title {
+font-size: 1.5rem;
+color: #8b7355;
+margin-bottom: 10px;
+font-weight: 500;
+}
+ 
+.location {
+font-size: 1.1rem;
+color: #8b7355;
+margin-bottom: 20px;
+}
+ 
+.section {
+background: white;
+border-radius: 15px;
+padding: 40px;
+margin: 30px 0;
+box-shadow: 0 5px 20px rgba(139, 115, 85, 0.15);
+border-left: 5px solid #8b7355;
+}
+ 
+h2 {
+font-size: 2.2rem;
+color: #5d4a3a;
+margin-bottom: 25px;
+display: flex;
+align-items: center;
+gap: 15px;
+}
+ 
+h2::before {
+content: '';
+width: 50px;
+height: 4px;
+background: linear-gradient(90deg, #8b7355, #2d2419);
+border-radius: 2px;
+}
+ 
+.about-text {
+font-size: 1.15rem;
+color: #4d4d4d;
+line-height: 1.8;
+}
+ 
+.experience-card, .education-card {
+background: linear-gradient(135deg, #faf8f5 0%, #f0ebe3 100%);
+padding: 30px;
+border-radius: 12px;
+margin-bottom: 20px;
+border-left: 4px solid #8b7355;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.experience-card:hover, .education-card:hover {
+transform: translateX(10px);
+box-shadow: 0 5px 20px rgba(139, 115, 85, 0.3);
+}
+ 
+.experience-card h3, .education-card h3 {
+color: #5d4a3a;
+font-size: 1.6rem;
+margin-bottom: 8px;
+}
+ 
+.experience-card .company {
+color: #8b7355;
+font-weight: 600;
+font-size: 1.2rem;
+margin-bottom: 12px;
+}
+ 
+.experience-card p, .education-card p {
+color: #4d4d4d;
+font-size: 1.05rem;
+line-height: 1.7;
+}
+ 
+.skills-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+gap: 15px;
+margin-top: 20px;
+}
+ 
+.skill-tag {
+background: linear-gradient(135deg, #8b7355 0%, #5d4a3a 100%);
+color: white;
+padding: 15px 20px;
+border-radius: 10px;
+text-align: center;
+font-weight: 600;
+transition: all 0.3s ease;
+cursor: default;
+}
+ 
+.skill-tag:hover {
+transform: scale(1.05);
+box-shadow: 0 5px 15px rgba(139, 115, 85, 0.5);
+}
+ 
+.contact-section {
+text-align: center;
+padding: 50px 40px;
+}
+ 
+.contact-btn {
+display: inline-block;
+background: linear-gradient(135deg, #8b7355 0%, #2d2419 100%);
+color: white;
+padding: 15px 45px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: 600;
+font-size: 1.1rem;
+margin-top: 20px;
+transition: all 0.3s ease;
+box-shadow: 0 5px 20px rgba(139, 115, 85, 0.4);
+}
+ 
+.contact-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 30px rgba(45, 36, 25, 0.6);
+}
+ 
+footer {
+text-align: center;
+padding: 30px 0;
+color: #8b7355;
+margin-top: 40px;
+}
+ 
+@keyframes float {
+0%, 100% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-10px);
+}
+}
+ 
+@media (max-width: 768px) {
+.hero h1 {
+font-size: 2.5rem;
+}
+ 
+.profile-container, .profile-image {
+width: 220px;
+height: 220px;
+}
+ 
+.section {
+padding: 25px;
+}
+ 
+h2 {
+font-size: 1.8rem;
+}
+ 
+nav {
+gap: 15px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+ 
+<div class="container">
+<section class="hero">
+<div class="profile-container">
+<img src="profile.jpg" alt="Mohit S" class="profile-image">
+</div>
+<h1>Mohit S</h1>
+<p class="title">AI Engineer | Software Developer</p>
+<p class="location">📍 Chennai, Tamil Nadu</p>
+</section>
+ 
+<section id="about" class="section">
+<h2>About Me</h2>
+<p class="about-text">
+I am dedicated to exploring and advancing new technologies. I thrive on experimenting with emerging technologies and actively staying informed about the latest industry trends. I am eager to explore new opportunities and make a valuable contribution to the ever-evolving landscape of technology. I enjoy technology and innovations in AI and am fond of coding.
+</p>
+</section>
+ 
+<section id="experience" class="section">
+<h2>Experience</h2>
+ 
+<div class="experience-card">
+<h3>AI Engineer</h3>
+<p class="company">Eucloid Data Solutions, Chennai</p>
+<p>
+Currently working on cutting-edge AI solutions, where I have the opportunity to dive deep into artificial intelligence technologies. I have developed comprehensive skills in software development and AI-based solutions, contributing to innovative projects that leverage the power of GenAI, machine learning and intelligent systems.
+</p>
+</div>
+ 
+<div class="experience-card">
+<h3>Software Development Intern</h3>
+<p class="company">eigengray</p>
+<p>
+Commenced my professional journey as an intern, where I leveraged diverse tools and technologies to enhance my proficiency in API development, Python programming, and software engineering. A notable highlight of this experience involved developing innovative software solutions utilizing GoPro camera integration. The role also provided a unique opportunity to collaborate with musicians, seamlessly bridging my technical expertise with my passion for music.
+</p>
+</div>
+</section>
+ 
+<section id="education" class="section">
+<h2>Education</h2>
+<div class="education-card">
+<h3>Bachelor of Engineering - Computer Science</h3>
+<p><strong>Madras Institute of Technology Campus</strong></p>
+<p style="margin-top: 10px;">Anna University, Chennai, Tamil Nadu</p>
+</div>
+</section>
+ 
+<section id="skills" class="section">
+<h2>Skills & Technologies</h2>
+<div class="skills-container">
+<div class="skill-tag">Python</div>
+<div class="skill-tag">AI Solutions</div>
+<div class="skill-tag">Machine Learning</div>
+<div class="skill-tag">API Development</div>
+<div class="skill-tag">Software Development</div>
+<div class="skill-tag">Problem Solving</div>
+<div class="skill-tag">Innovation</div>
+</div>
+</section>
+ 
+<section id="contact" class="section contact-section">
+<h2 style="justify-content: center;">Let's Connect</h2>
+<p class="about-text">
+Interested in collaborating on AI projects or discussing emerging technologies? I'd love to hear from you!
+</p>
+<a href="mailto:m28_2003@yahoo.com" class="contact-btn">Get In Touch</a>
+</section>
+</div>
+ 
+<footer>
+<p>&copy; 2025 Mohit S. All rights reserved.</p>
+<p style="font-size: 0.75rem; margin-top: 10px; opacity: 0.6;">Created by AR</p>
+</footer>
+</body>
 </html>
